@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	
+</head>
+<body>
+	
+	<h1 class="Hola">Calculadora</h1><br>
+	
+
+	
+	<input type="text" id="precio1" value="precio">
+	<input type="button" id="calc" value="calcular"><br>
+	<input type="text" id="resultado1" value="%propina">
+	
+	<script type="text/javascript">
+		document.getElementById("calc").addEventListener("click",calcular1);
+		function calcular1(){
+			var precio = document.getElementById("precio1").value;
+			var precio1 = parseInt(precio);
+			var propina = 0;
+			
+			if (precio1 < 50) {
+				propina = precio1 * 0.2;
+
+			}else if (precio1<=200) {
+				propina = precio1 * 0.15;
+			}else {
+				propina = precio1 * 0.10;
+			}
+
+			
+
+			document.getElementById("resultado1").value = propina;
+			
+		}
+		
+		
+	</script>
+</body>
+</html>
