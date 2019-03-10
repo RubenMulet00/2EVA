@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Masa Muscular</title>
+</head>
+<body>
+	<h1>Calcula tu masa muscular</h1>
+	<input type="text" id="peso"value="Peso">
+	<input type="text" id="altura"value="Altura">
+	<input type="button" id="calcular"value="Calcular">
+	<input type="text" id="result"value="IMM">
+
+	<script type="text/javascript">
+	console.log("funciona");
+	document.getElementById("calcular").addEventListener("click", calcularMasa);
+
+	function calcularMasa() {
+		var peso = document.getElementById("peso").value;
+		var altura = document.getElementById("altura").value;
+		console.log("Tu IMM");
+		document.getElementById("result").value = peso/(altura*altura);}
+	</script>
+
+</body>
+</html>
